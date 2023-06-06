@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f76c933cf7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/animations/header.js"></script>
+    <title>Álefe</title>
+</head>
+
+<body>
+    <script src="js/translates/translate.js"></script>
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">AlefeGS.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('wellcome')" href="#" data-translate="wellcome"
+                            id="translate.wellcome"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('experience')" href="#" data-translate="experience"
+                            id="translate.experience"></a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('technologies')" href="#"
+                            data-translate="technologies" id="translate.technologies"></a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('my-products')" href="#"
+                            data-translate="my-products" id="translate.my-products"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle" type="button"
+                                data-translate="language-dropdown" id="languageDropdown translate.language-dropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Selecione o Idioma
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                <li>
+                                    <button class="dropdown-item" onclick="loadTranslations('pt-br')">Português
+                                        (Brasil)</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" onclick="loadTranslations('en-us')">English
+                                        (US)</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="navigation">
+        <header class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+
+                                <button class="btn text-white dropdown-toggle" type="button"
+                                    data-translate="language-dropdown" id="languageDropdown translate.language-dropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Selecione o Idioma
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    <li>
+                                        <button class="dropdown-item text-black"
+                                            onclick="loadTranslations('pt-br')">Português
+                                            (Brasil)</button>
+                                    </li>
+                                    <li>
+                                        <button class="dropdown-item" onclick="loadTranslations('en-us')">English
+                                            (US)</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </nav>
+
+    <div class="content">
+        <div class="scrollable-content">
+
+            <session class="fixed-content row justify-content-center" id="profile-content">
+                <div id="perfil" class="py-5 text-center">
+                    <div class="container card mb-4 backgroud-develop">
+                        <div class="row card-body">
+                            <div class="col">
+                                <img src="https://avatars.githubusercontent.com/u/79657620?v=4" alt="Foto de Perfil"
+                                    id="id_profile_img" class="img-fluid rounded-circle pt-5" style="width: 200px;">
+                                <h2 class="text-white pt-3">Álefe Gabriel da Silva</h2>
+                                <p class="lead text-white pd-6">Desenvolvedor CrossPlatform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </session>
+
+            <section id="wellcome" class="py-5 min-vh-100">
+                <div class="pt-6">
+                    <div class="imagem">
+                        <img src="assets/images/Technology-Design-for-Template.jpg">
+                    </div>
+                    <div class="jumbotron text-center">
+                        <h1 class="display-4 text-white">Bem-vindo ao nosso site!</h1>
+                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            ultricies ante
+                            vitae sapien lobortis, id tincidunt ipsum efficitur. Aenean ullamcorper, elit a tincidunt
+                            venenatis.</p>
+                        <br>
+                        <br>
+                        <img src="assets/images/Developer.webp" class="develop-img">
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="experience" class="py-5 min-vh-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-center mb-4 pt-2" data-translate="experience" id="translate.experience"></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desenvolvimento Frontend</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desenvolvimento Backend</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desenvolvimento CrossPlatform</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="technologies" class="py-5 min-vh-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-center mb-4 pt-2" data-translate="technologies" id="translate.technologies"></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pb-3">
+                            <div class="card mb-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Linguagens de Programação</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa-solid fa-c"></i> C</li>
+                                        <li><object data="assets/icons/icons8-c-sharp-logo-16.svg" width="16"
+                                                height="16"> </object> C#</li>
+                                        <li><i class="fa-brands fa-java"></i> Java</li>
+                                        <li><object data="assets/icons/icons8-kotlin-16.svg" width="16" height="16">
+                                            </object> Kotlin</li>
+                                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                                        <li><object data="assets/icons/icons8-typescript.svg" width="16" height="16">
+                                            </object> TypeScript</li>
+                                        <li><i class="fa-brands fa-php"></i> PHP</li>
+                                        <li><object data="assets/icons/icons8-dart.svg" width="16" height="16">
+                                            </object> Dart</li>
+                                        <li><i class="fa-brands fa-swift"></i> Swift</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <div class="card mb-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Frameworks e Bibliotecas</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <object data="assets/icons/icons8-flutter.svg" width="16" height="16">
+                                            </object>
+                                            Flutter
+                                        </li>
+                                        <li>
+                                            <object data="assets/icons/icons8-ionic.svg" width="16" height="16">
+                                            </object>
+                                            IONIC
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-angular"></i>
+                                            Angular
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-vuejs"></i>
+                                            Vue
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-react"></i>
+                                            React
+                                        </li>
+                                        <li>
+                                            <object data="assets/icons/slim-seeklogo.com.svg" width="16" height="16">
+                                            </object>
+                                            PHP Slim
+                                        </li>
+                                        <li>
+                                            <object data="assets/icons/icons8-spring-boot.svg" width="16" height="16">
+                                            </object>
+                                            SpringBoot
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <div class="card mb-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Banco de Dados</h5>
+                                    <ul class="list-unstyled">
+                                        <li><object
+                                                data="assets/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png"
+                                                width="16" height="16"> </object> MongoDB
+                                        </li>
+                                        <li><object data="assets/icons/icons8-firebase.svg" width="16" height="16">
+                                            </object> Firebase
+                                        </li>
+                                        <li><object data="assets/icons/icons8-mariadb.svg" width="16" height="16">
+                                            </object> MariaDB
+                                        </li>
+                                        <li><object data="assets/icons/icons8-postgresql.svg" width="16" height="16">
+                                            </object> PostegresSQL
+                                        </li>
+                                        <li><object data="assets/icons/icons8-mysql-26.png" width="16" height="16">
+                                            </object> MySQL
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5 min-vh-100" id="my-products">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center mb-4 pt-2" data-translate="my-products" id="translate.my-products"></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 pb-3">
+                            <div class="card mb-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flap Bird</h5>
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pb-3">
+                            <div class="card mb-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mata Mosquito</h5>
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bg-dark text-white">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Footer Title</h3>
+                            <p>Some text or description goes here.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Contact</h3>
+                            <ul class="list-unstyled">
+                                <li>Address: 123 Street, City</li>
+                                <li>Phone: 123-456-7890</li>
+                                <li>Email: example@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <button id="backToTopButton" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/animations/cards.js"></script>
+    <script src="js/responsiveness/profile.js"></script>
+    <script src="js/animations/profile.js"></script>
+    <script src="js/animations/click_to_scroll.js"></script>
+</body>
+
+</html>
