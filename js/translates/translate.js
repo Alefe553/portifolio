@@ -9,7 +9,7 @@ const changeLanguage = (language) => {
     }
 }
 
-function loadTranslations(language) {
+const loadTranslations = (language) => {
     fetch(`js/translates/${language}.json`)
         .then(response => response.json())
         .then(data => {
