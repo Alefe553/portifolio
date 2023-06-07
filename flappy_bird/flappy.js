@@ -41,9 +41,6 @@ class BarrierPair {
     sortOpening() {
         const topHeight = Math.random() * (this.height - this.opening);
         const bottomHeight = this.height - this.opening - topHeight;
-        console.log(topHeight);
-        console.log(this.opening);
-        console.log(bottomHeight);
         this.top.setHeight(topHeight);
         this.bottom.setHeight(bottomHeight);
     }
