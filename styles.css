@@ -1,6 +1,7 @@
 :root {
     --primary-color: #1f1f1f;
     --secondary-color: #16475e;
+    --card-color: #0D262D;
 }
 
 * {
@@ -224,4 +225,12 @@ section {
 .develop-img {
     max-width: 450px;
     border-radius: 10px;
+}
+
+.bg-card {
+    background-color: var(--card-color);
+}
+
+.card {
+    border-color: var(--card-color);
 }
