@@ -41,9 +41,6 @@ class BarrierPair {
     sortOpening() {
         const topHeight = Math.random() * (this.height - this.opening);
         const bottomHeight = this.height - this.opening - topHeight;
-        console.log(topHeight);
-        console.log(this.opening);
-        console.log(bottomHeight);
         this.top.setHeight(topHeight);
         this.bottom.setHeight(bottomHeight);
     }
@@ -153,7 +150,7 @@ class Bird {
 
 class Progress {
     constructor() {
-        this.element = newElement('span', 'progress');
+        this.element = newElement('div', 'points');
         this.updatePoint(0);
     }
 
@@ -239,6 +236,30 @@ class FlappyBird {
     }
 }
 
-new FlappyBird();
+class PlayGame {
+    constructor() {
+        this.screen = document.querySelector('[flappy]');
+        this.elementsInScreen = this.screen.querySelectorAll("*");
+        this.play();
+    }
 
+    cleanScreen() {
+
+        this.elementsInScreen.forEach((element) => {
+            element.remove();
+        });
+    }
+
+    play() {
+        this.cleanScreen();
+        new FlappyBird();
+    }
+}
+
+
+const play = document.getElementById('play');
+play.onclick = () => {
+    console.log('click')
+    new PlayGame();
+}
 

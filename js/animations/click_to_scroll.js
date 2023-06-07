@@ -25,5 +25,4 @@ const scrollToSection = (sectionId) => {
             behavior: 'smooth'
         });
     }
-    console.log(sectionId)
 }

@@ -45,6 +45,11 @@
                         <a class="nav-link" onclick="scrollToSection('my-products')" href="#"
                             data-translate="my-products" id="translate.my-products"></a>
                     </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToSection('contact')" href="#" data-translate="contact"
+                            id="translate.contact"></a>
+                    </li>
                     <li class="nav-item">
                         <div class="dropdown">
                             <button class="btn text-white dropdown-toggle" type="button"
@@ -54,24 +59,32 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                                 <li>
-                                    <button class="dropdown-item" onclick="loadTranslations('pt-br')">Português
-                                        (Brasil)</button>
+                                    <button class="dropdown-item" onclick="loadTranslations('pt-br')">
+                                        Português (Brasil)
+                                    </button>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" onclick="loadTranslations('en-us')">English
-                                        (US)</button>
+                                    <button class="dropdown-item" onclick="loadTranslations('en-us')">
+                                        English (US)
+                                    </button>
                                 </li>
-                            </ul>
-                        </div>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" onclick="loadTranslations('es')">
+                            Español
+                        </button>
                     </li>
                 </ul>
-            </nav>
+        </div>
+        </li>
+        </ul>
+        </nav>
         </div>
     </header>
     <nav class="navigation">
         <header class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#">AlefeGS.dev</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -84,25 +97,31 @@
                                 <button class="btn text-white dropdown-toggle" type="button"
                                     data-translate="language-dropdown" id="languageDropdown translate.language-dropdown"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Selecione o Idioma
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                                     <li>
-                                        <button class="dropdown-item text-black"
-                                            onclick="loadTranslations('pt-br')">Português
-                                            (Brasil)</button>
+                                        <button class="dropdown-item" onclick="loadTranslations('pt-br')">
+                                            Português (Brasil)
+                                        </button>
                                     </li>
                                     <li>
-                                        <button class="dropdown-item" onclick="loadTranslations('en-us')">English
-                                            (US)</button>
+                                        <button class="dropdown-item" onclick="loadTranslations('en-us')">
+                                            English (US)
+                                        </button>
                                     </li>
-                                </ul>
-                            </div>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" onclick="loadTranslations('es')">
+                                Español
+                            </button>
                         </li>
                     </ul>
-                </nav>
             </div>
-        </header>
+            </li>
+            </ul>
+    </nav>
+    </div>
+    </header>
     </nav>
 
     <div class="content">
@@ -116,26 +135,23 @@
                                 <img src="https://avatars.githubusercontent.com/u/79657620?v=4" alt="Foto de Perfil"
                                     id="id_profile_img" class="img-fluid rounded-circle pt-5" style="width: 200px;">
                                 <h2 class="text-white pt-3">Álefe Gabriel da Silva</h2>
-                                <p class="lead text-white pd-6">Desenvolvedor CrossPlatform</p>
+                                <p class="lead text-white pd-6" data-translate="developer" id="translate.developer"></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </session>
 
-            <section id="wellcome" class="py-5 min-vh-100">
+            <section id="wellcome" class="py-5 min-vh-100 me-5">
                 <div class="pt-6">
                     <div class="imagem">
                         <img src="assets/images/Technology-Design-for-Template.jpg">
                     </div>
                     <div class="jumbotron text-center">
-                        <h1 class="display-4 text-white">Bem-vindo ao nosso site!</h1>
-                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            ultricies ante
-                            vitae sapien lobortis, id tincidunt ipsum efficitur. Aenean ullamcorper, elit a tincidunt
-                            venenatis.</p>
-                        <br>
-                        <br>
+                        <h1 class="display-4 text-white" data-translate="wellcome.tomypage"
+                            id="translate.wellcome.tomypage"></h1>
+                        <p class="lead text-white" data-translate="wellcome.p" id="translate.wellcome.p">
+                        </p>
                         <img src="assets/images/Developer.webp" class="develop-img">
                     </div>
                 </div>
@@ -146,37 +162,41 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h2 class="text-center mb-4 pt-2" data-translate="experience" id="translate.experience"></h2>
+                            <h2 class="text-center mb-4 pt-2" data-translate="experience" id="translate.experience">
+                            </h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card mb-4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Desenvolvimento Frontend</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                    <h5 class="card-title" data-translate="technologies.title.frontend"
+                                        id="translate.technologies.title.frontend"></h5>
+                                    <p class="card-text" data-translate="technologies.frontend"
+                                        id="translate.technologies.frontend"></p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Desenvolvimento Backend</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                    <h5 class="card-title" data-translate="technologies.title.backend"
+                                        id="translate.technologies.title.backend"></h5>
+                                    <p class="card-text" data-translate="technologies.backend"
+                                        id="translate.technologies.backend">
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card mb-4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Desenvolvimento CrossPlatform</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                                        Curae; Donec blandit mauris et lectus lacinia, auctor gravida orci lacinia.</p>
+                                    <h5 class="card-title" data-translate="technologies.title.crossplatform"
+                                        id="translate.technologies.title.crossplatform"></h5>
+                                    <p class="card-text" data-translate="technologies.crossplatform"
+                                        id="translate.technologies.crossplatform">
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +208,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h2 class="text-center mb-4 pt-2" data-translate="technologies" id="translate.technologies"></h2>
+                            <h2 class="text-center mb-4 pt-2" data-translate="technologies" id="translate.technologies">
+                            </h2>
                         </div>
                     </div>
                     <div class="row">
@@ -292,19 +313,19 @@
                     <div class="row justify-content-center">
                         <div class="col-md-4 pb-3">
                             <div class="card mb-4 h-100">
-                                <a href="flappy_bird/flappy.html" style="text-decoration: none; text-align: center;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Flap Bird</h5>
-                                        <ul class="list-unstyled">
-                                        </ul>
-                                    </div>
+                                <a class="card-body" href="/flappy_bird/flappy.html"
+                                    style="text-align: center; text-decoration: none;">
+                                    <h2 class="card-title pixel-text">GAME</h2>
+                                    <ul class="list-unstyled">
+                                        <img src="assets/images/bird.png" class="pt-3" alt="bird">
+                                    </ul>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 pb-3">
                             <div class="card mb-4 h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mata Mosquito</h5>
+                                <div class="card-body" style="text-align: center;">
+                                    <h2 class="card-title pixel-text">GAME</h2>
                                     <ul class="list-unstyled">
                                     </ul>
                                 </div>
@@ -314,19 +335,27 @@
                 </div>
             </section>
 
-            <footer class="bg-dark text-white">
+            <footer class="bg-dark text-white" id="contact">
                 <div class="container py-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3>Footer Title</h3>
-                            <p>Some text or description goes here.</p>
+                            <h3 data-translate="bye" id="translate.bye"></h3>
+                            <p data-translate="thanks" id="translate.thanks"></p>
                         </div>
                         <div class="col-md-6">
-                            <h3>Contact</h3>
+                            <h3 data-translate="contact.me" id="translate.contact.me"></h3>
                             <ul class="list-unstyled">
-                                <li>Address: 123 Street, City</li>
-                                <li>Phone: 123-456-7890</li>
-                                <li>Email: example@example.com</li>
+                                <br>
+                                <li>Email: arefu.23@gmail.com</li>
+                                <br>
+                                <li>
+                                    Linkedin: <a
+                                        href="https://br.linkedin.com/in/alefe-gabriel-silva-8461111a2">linkedin.com/in/alefe-gabriel-silva-8461111a2</a>
+                                </li>
+                                <br>
+                                <li>
+                                    GitHub: <a href="https://github.com/Alefe553">github.com/Alefe553</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
