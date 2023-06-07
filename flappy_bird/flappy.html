@@ -4,13 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f76c933cf7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flappy.css">
 </head>
 
 <body class="content">
-    <h1>Flappy Bird</h1>
+    <div class="d-flex flex-row justify-content-between align-items-center vw-100 py-3 px-5">
+        <a href="../index.html">
+            <button class="btn btn-primary">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+        </a>
+        <h1>Flappy Bird</h1>
+        <button class="btn btn-primary" id="play">
+            Play <i class="fa-solid fa-play"></i>
+        </button>
+    </div>
     <div flappy></div>
     <script src="flappy.js"></script>
 </body>

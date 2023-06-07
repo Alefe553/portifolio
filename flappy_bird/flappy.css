@@ -51,7 +51,7 @@
     height: 30px;
     width: 130px;
     background: linear-gradient(90deg, #639301, #a5e82e);
-    border: 2px solid #000;
+    border: 2px solid #000 !important;
 }
 
 .barrier .body {
@@ -62,11 +62,11 @@
     border-right: 2px solid #000;
 }
 
-.progress {
+.points {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-family: Pixel;
-    font-size: 70px;
+    font-family: Pixel !important;
+    font-size: 70px !important;
     z-index: 1;
 }

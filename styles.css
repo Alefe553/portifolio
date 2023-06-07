@@ -1,10 +1,22 @@
 :root {
     --primary-color: #1f1f1f;
     --secondary-color: #16475e;
+    --card-color: #0D262D;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url(assets/fonts/rainyhearts.ttf);
 }
 
 * {
     color: grey !important;
+    font-family: 'Roboto';
 }
 
 body {
@@ -24,6 +36,10 @@ section {
 
 footer {
     border-top-left-radius: 24px;
+}
+
+.pixel-text {
+    font-family: 'Pixel';
 }
 
 .navigation {
@@ -224,4 +240,8 @@ section {
 .develop-img {
     max-width: 450px;
     border-radius: 10px;
+}
+
+.card {
+    border-color: var(--card-color);
 }
