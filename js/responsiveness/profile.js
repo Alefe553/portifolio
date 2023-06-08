@@ -1,7 +1,9 @@
 
-const changeClass = (idElement, oldClass, newClasses) => {
+const changeClass = (idElement, oldClasses, newClasses) => {
     let element = document.getElementById(idElement);
-    element.classList.remove(oldClass);
+    oldClasses.forEach((oldClass) => {
+        element.classList.remove(oldClass);
+    });
     newClasses.forEach((newClass) => {
         element.classList.add(newClass);
     });
@@ -9,9 +11,9 @@ const changeClass = (idElement, oldClass, newClasses) => {
 
 const handleScreenSizer = (event) => {
     if (event.matches) {
-        changeClass('profile-content', 'fixed-content', ['vh-100']);
+        changeClass('profile-content', ['fixed-content'], ['min-vh-100', 'py-5', 'mx-3']);
     } else {
-        changeClass('profile-content', 'vh-100', ['fixed-content']);
+        changeClass('profile-content', ['min-vh-100', 'py-5', 'mx-3'], ['fixed-content']);
     }
 }
 
